@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <style>
+            ul{
+                list-style-type: none;
+                position:relative;
+                margin:0;
+                padding:0;
+                overflow:hidden;
+                background-color:cornsilk;
+            }
+            li{
+                float:left;
+                display: block;
+                color:crimson;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                text-align: center;
+                padding: 5px 5px;
+                font-weight: bold;
+            }
+            a{
+                text-decoration: none;
+                color:darkolivegreen;
+            }
+        </style>
+</head>
+<body>
+        <div>
+                <ul>
+                    <li>GOBUYSOMEPIZZA</li>
+                    <li><a href="index.htm">Mi Casa Es Tu Casa</a></li>
+                    <li><a href="food.htm">Food Critiques</a></li>
+                    <li><a href="travel.htm">Places to Travel</a></li>
+                    <li><a href="hockey.htm">Hockey Thoughts</a></li>
+                    <li><a href="activities.htm">Lazy Activities</a></li>
+                    <li><a href="contact.htm">Contact & Feedback</a></li>
+                    <li><a href="sitemap.htm">SiteMap</a></li>
+                </ul>
+            </div>
+    <form method="post" action=mailto:mguzman4@babson.edu enctype="text/plain">
+        <div>
+            First Name:
+            <input type="text" name="fname" maxlength="30" size="30">
+            Last Name:
+            <input type="text" name="lname" maxlength="30" size="30">
+        </div>
+        <br>
+        <div>
+            My Favorite Page
+            <br>
+            <input type="checkbox" name="fave" value="food">Food Critiques
+            <br>
+            <input type="checkbox" name="fave" value="travel">Places to Travel
+            <br>
+            <input type="checkbox" name="fave" value="hockey">Hockey Thoughts
+            <br>
+            <input type="checkbox" name="fave" value="lazy">Lazy Activities
+        </div>
+       <div>
+        <p>Did you GOBUYSOMEPIZZA today?</p>
+        <select name="pizza">
+            <option value="y">Yes</option>
+            <option value="n">No</option>
+            <option value="m">Will do later!</option>
+       </select>
+        </div>
+        <div>
+            Always looking to add more content, change things, and improve the site. YOUR thoughts and opinions are critical! Please leave any comments, opinions, and thoughts below:
+            <br>
+            <textarea name="feedback" rows="7" cols="30"></textarea>
+        </div>
+        <div>
+            <button type="Submit" name="Submit" value="Submit">SUBMIT           
+            <button type="reset" name="reset" value="reset">RESET
+        </div>
+    </body>
+</html>

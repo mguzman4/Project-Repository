@@ -3,63 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+    <meta name="description" content="Lazy Acitivties">
+    <meta name="keywords" content="homepage, food, stress, travel, places, thoughts, hockey, nhl, contact, feedback, random, bored, eat, recommendations, blog, napping, fogging, fake jogging, sailing, catalina, netflix, the office, lazy exercising">
+    <meta name="author" content="Marisol Guzman">
     <title>Lazy Activties</title>
     <style>
-            ul{
-                list-style-type: none;
-                position:relative;
-                margin:0;
-                padding:0;
-                overflow:hidden;
-                background-color:cornsilk;
-            }
-            li{
-                float:left;
-                display: block;
-                color:crimson;
-                font-family: Georgia, 'Times New Roman', Times, serif;
-                text-align: center;
-                padding: 5px 5px;
-                font-weight: bold;
-            }
-            a{
-                text-decoration: none;
-                color:darkolivegreen;
-            }
         </style>
+<link rel="stylesheet" href="css/nav.css" type=text/css />
+<script type="text/javascript">
+    function enlargeImage(imageId){
+        let i= document.getElementById(imageId);
+        let w =i.width;
+        w = w * 1.5;
+        i.style.width = w + "px";
+  
+}
+    function reduceImage(imageId){
+        let i = document.getElementById(imageId);
+        let w= i.width;
+        w = w / 1.5;
+        i.style.width = w+"px";
+    }
+</script>
 </head>
 <body>
-        <div>
-                <ul>
-                    <li>GOBUYSOMEPIZZA</li>
+        <div class="nav">
+                <ul class="navresponds">
+                    <li>GBSP</li>
                     <li><a href="index.htm">Mi Casa Es Tu Casa</a></li>
-                    <li><a href="food.htm">Food Critiques</a></li>
+                    <li><a href="food.htm">Food to Eat</a></li>
                     <li><a href="travel.htm">Places to Travel</a></li>
                     <li><a href="hockey.htm">Hockey Thoughts</a></li>
                     <li><a href="activities.htm">Lazy Activities</a></li>
+                    <li><a href="game.html">Pizza Games</a></li>
                     <li><a href="contact.htm">Contact & Feedback</a></li>
                     <li><a href="sitemap.htm">SiteMap</a></li>
                 </ul>
             </div>
-Being lazy is pretty great. Below are some of my favorite lazy activties:
+            <div class="margins">
+<h1>Lazy Activities</h1>
+<h5>Being lazy is pretty great. Below are some of my favorite lazy activties:</h5>
 <h1>Napping</h1>
-<img src="https://www.dogster.com/wp-content/uploads/2016/02/shutterstock_370950680.jpg" height="100" title="Sleep" atl="Napping">
+<img onmouseover="enlargeImage(this.id)" onmouseout="reduceImage(this.id)" id="napping" src="images/napping.jpg" width="400" title="Sleep" atl="Napping">
 <h4> 
     Sleep is an essential. Napping is a great pass time and activity. It can help you regain enegry after you've spent the day doing nothing. Highly recommend!
 </h4>
 <h1>Sailing</h1>
-<img src="https://www.sailmagazine.com/.image/t_share/MTQ4OTg4MTE3MDQ2MjczMDc5/alerion-28d_1.jpg" height="100" title="Catalina" atl="Sailing">
+<img onmouseover="enlargeImage(this.id)" onmouseout="reduceImage(this.id)" id="sailing" src="images/sailing.jpg" width="400" title="Catalina" atl="Sailing">
 <h4> 
     As a beginner and inexperinced sailor, I sail in a Catalina with two other members. You get to sit down and take in the views. You get to feel the winds and be so close to the water. Yes you do a little work, but not much especially if you're on crew and are not competing. Thus, it's a lazy activity.
 </h4>
 <h1>Netflixing</h1>
-<img src="https://media.giphy.com/media/vgUFOWBwBkziE/giphy.gif" height="100" title="Stanley" atl="Netflixing">
+<img onmouseover="enlargeImage(this.id)" onmouseout="reduceImage(this.id)" id="netflixing" src="images/netflixing.jpg" width="400" title="Stanley" atl="Netflixing">
 <h4>
     Unless you live under a rock, then you know what it is. My favorite show is The Office. What's yours? Please feel free to share by putting it in the comments <a href="contact.htm">here</a>.</h4>
 <h1>"Exercising"</h1>
-<img src="https://footage.framepool.com/shotimg/qf/718475282-jogger-jogging-body-consciousness-amateur-sports.jpg" height="100" title="Beach Jog" atl="Jogging">
+<img onmouseover="enlargeImage(this.id)" onmouseout="reduceImage(this.id)" id="exercising" src="images/excersizing.jpg" width="400" title="Beach Jog" atl="Jogging">
 <h4>
     Fogging aka fake jogging(basically jogging for like 30 seconds and then proceeding to walk at a fast-ish speed and moving your arms a lot). It makes you feel like your working out. While you're not doing much, it beats just sitting on a couch like a real couch potato.</h4>
+</div>
 </body>
 </html>

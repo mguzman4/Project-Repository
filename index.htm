@@ -4,51 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Home Page">
+    <meta name="keywords" content="homepage, food, stress, travel, places, thoughts, hockey, nhl, contact, feedback, random, bored">
+    <meta name="author" content="Marisol Guzman">
     <title>Home</title>
-    <style>
-        ul{
-            list-style-type: none;
-            position:relative;
-            margin:0;
-            padding:0;
-            overflow:hidden;
-            background-color:cornsilk;
-        }
-        li{
-            float:left;
-            display: block;
-            color:crimson;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            text-align: center;
-            padding: 5px 5px;
-            font-weight: bold;
-        }
-        a{
-            text-decoration: none;
-            color:darkolivegreen;
-        }
+    <link rel="stylesheet" href="css/nav.css" type=text/css >
+  <style>
+      #shape {
+    /* width: 200px;
+    height: 200px; */
+    /* background-color: red;
+    display: none; */
+    position: relative;
+}
     </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script type="text/javascript">
+        $( function() {
+        $( ".draggable" ).draggable();
+      } );
+      let p = 320;
+      let i = 0;
+      const disclaimer = [
+      "Disclaimer: This site is super biased and is not meant to be taken seriously.", 
+      "With that in mind, please feel free to look around and enjoy!",
+      "Disclaimer: This site is super biased and is not meant to be taken seriously.",
+      "With that in mind, please feel free to look around and enjoy!",
+      "Disclaimer: This site is super biased and is not meant to be taken seriously.",
+      "With that in mind, please feel free to look around and enjoy!",
+      ];
+
+      function movingText(){
+        let x=document.getElementById
+        ("msg");
+        x.innerHTML = disclaimer[i];
+        x.style.left = p + "px";
+        if (p > 700) {
+          p = 320;
+          i++;
+          if (i == disclaimer.length) {
+            i = 0;
+          }
+        } else {
+          p = p + 1;
+        }
+        setTimeout("movingText()", 8);
+      }    
+      </script>
 </head>
-<body>
-    <div>
-        <ul>
-            <li>GOBUYSOMEPIZZA</li>
+<body onload="movingText()">
+    <div class="nav">
+        <ul class="navresponds">
+            <li>GBSP</li>
             <li><a href="index.htm">Mi Casa Es Tu Casa</a></li>
-            <li><a href="food.htm">Food Critiques</a></li>
+            <li><a href="food.htm">Food to Eat</a></li>
             <li><a href="travel.htm">Places to Travel</a></li>
             <li><a href="hockey.htm">Hockey Thoughts</a></li>
             <li><a href="activities.htm">Lazy Activities</a></li>
+            <li><a href="game.html">Pizza Games</a></li>
             <li><a href="contact.htm">Contact & Feedback</a></li>
             <li><a href="sitemap.htm">SiteMap</a></li>
         </ul>
     </div>
-    <p>Often times, I find myslef stressing over stuff that doesn't really matter and won't matter in a few months or years from now. I don't know if you can relate, but I hope that this page can serve as an escape from the seriousness and other aspects of life that may be weighing down your spirits.</p>
-    <p>Welcome to random thoughts & stuff from a kid from some place somewhere! Welcome to GOBUYSOMEPIZZA!</p>
-    <p>Disclaimer: This site is super biased and is not meant to be taken seriously. With that in mind, please feel free to look around and enjoy!</p>
+    <div class="margins">
+    <h2>Often times, I find myself stressing over stuff that doesn't really matter and won't matter in a few months or years from now. I don't know if you can relate, but I hope that this page can serve as an escape from the seriousness and other aspects of life that may be weighing down your spirits.</h2>
+    <h1>Welcome to random thoughts & stuff from a kid from some place somewhere! Welcome to GOBUYSOMEPIZZA!</h1>
+    <h4 id="msg">Disclaimer: This site is super biased and is not meant to be taken seriously. With that in mind, please feel free to look around and enjoy!</h1>
     <audio controls muted loop autoplay id="intro">
         <source src="images/intro.m4a" type="audio/mp4">
     </audio>
     <!-- didn't add additional on/off buttons because they are embeded above -->
-    
+    <img src= "images/pizza.png" alt="pizza" title="pizza slice" id="shape"/>
+    <script type="text/javascript" src="script.js"></script>
+    <img src="images/pizza.png" class="draggable" atl="pizza slice" title="drag me around" height="200">
+    <p>one pizza disappears on click and the other is draggable</p>
+
+</div>
 </body>
 </html>

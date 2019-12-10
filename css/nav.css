@@ -1,0 +1,96 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(176,196,222);
+    text-align: center;
+    margin:0;
+}
+.margins{
+    padding-right: 15%;
+    padding-left: 15%;
+}
+/* .nav{
+    
+} */
+h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36pt;
+    color: rgb(240,248,255);
+    text-transform: uppercase;
+}
+h4{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14pt;
+    color: rgb(119,136,153);
+    font-style: italic;
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15pt;
+    color: rgb(119,136,153);
+    font-style: italic;
+    font-weight: 500;
+    text-align: center;
+}
+h5{
+    font-size: 12pt;
+    color: rgba(0, 0, 0, 0.589);
+}
+h6{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17pt;
+    color: rgb(119,136,153);
+    font-style: italic;
+    font-weight: 500;
+    text-align: center;
+}
+h7{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25pt;
+    color: rgb(240,248,255);
+    text-transform: uppercase;
+}
+p{
+    /* font-family: 'Courier New', Courier, monospace; */
+    color: rgb(245,255,250);
+}
+a{
+    text-decoration:none;
+    color:  whitesmoke;
+}
+ul.navresponds{
+    list-style-type: none;
+    position:relative;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color: rgba(176, 196, 226, 0.705);
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    overflow: hidden;
+}
+ul.navresponds li{
+    float:left;
+    display: block;
+    color:  rgb(240,248,255);
+    padding: 10px 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+ul.navresponds li a:hover {
+    color: rgb(245,255,250);
+    background-color: rgb(119,136,153);
+}
+ul.navresponds li a{
+    float:left;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color:  rgb(119,136,153);
+    font-size: 18px;
+    font-style: italic;
+    padding: 10px 15px;
+}

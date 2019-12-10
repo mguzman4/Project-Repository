@@ -1,49 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Food Critiques</title>
-    <style>
-            ul{
-                list-style-type: none;
-                position:relative;
-                margin:0;
-                padding:0;
-                overflow:hidden;
-                background-color:cornsilk;
-            }
-            li{
-                float:left;
-                display: block;
-                color:crimson;
-                font-family: Georgia, 'Times New Roman', Times, serif;
-                text-align: center;
-                padding: 5px 5px;
-                font-weight: bold;
-            }
-            a{
-                text-decoration: none;
-                color:darkolivegreen;
-            }
-        </style>
-</head>
-<body>
-        <div>
-                <ul>
-                    <li>GOBUYSOMEPIZZA</li>
-                    <li><a href="index.htm">Mi Casa Es Tu Casa</a></li>
-                    <li><a href="food.htm">Food Critiques</a></li>
-                    <li><a href="travel.htm">Places to Travel</a></li>
-                    <li><a href="hockey.htm">Hockey Thoughts</a></li>
-                    <li><a href="activities.htm">Lazy Activities</a></li>
-                    <li><a href="contact.htm">Contact & Feedback</a></li>
-                    <li><a href="sitemap.htm">SiteMap</a></li>
-                </ul>
-            </div>
-    GOBUYSOMEPIZZA right now (or later, but be sure to gobuysomepizza at some point)
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="Food Page">
+<meta name="keywords" content="homepage, food, stress, travel, places, thoughts, hockey, nhl, contact, feedback, random, bored, eat, recommendations, blog">
+<meta name="author" content="Marisol Guzman">
+<title>Food Critiques</title>
+<style>
+    #redblock{
+    color: white;
+    background-color:#7c1111;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    }
+    #grayblock{
+    background-color: #f2f0f0;
+    color:black;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    }
+    img{
+        height:300px;
+    }
+</style>
+<script>
+      let p = 320;
+      let i = 0;
+      const warning = [
+      "Some of these images may cause viewer's stomachs to growl or induce hunger.",
+      "It could also lead some to purchase pizza and other food.", 
+      "Proceed at your own risk.",
+      "Some of these images may cause viewer's stomachs to growl or induce hunger.",
+      "It could also lead some to purchase pizza and other food.",
+      "Proceed at your own risk.",
+      ];
 
-<h1>Food is currently being consumed in order to produce these food critiques. In the meantime, please go try some new foods and make your own critiques.</h1>
+      function movingText(){
+        let x=document.getElementById
+        ("msg");
+        x.innerHTML = warning[i];
+        x.style.left = p + "px";
+        if (p > 700) {
+          p = 320;
+          i++;
+          if (i == warning.length) {
+            i = 0;
+          }
+        } else {
+          p = p + 1;
+        }
+        setTimeout("movingText()", 8);
+      }   
+</script>
+<link rel="stylesheet" href="css/nav.css" type=text/css >
+</head>
+<body onload="movingText()">
+    <div class= "nav">
+        <ul class="navresponds">
+            <li>GBSP</li>
+            <li><a href="index.htm">Mi Casa Es Tu Casa</a></li>
+            <li><a href="food.htm">Food to Eat</a></li>
+            <li><a href="travel.htm">Places to Travel</a></li>
+            <li><a href="hockey.htm">Hockey Thoughts</a></li>
+            <li><a href="activities.htm">Lazy Activities</a></li>
+            <li><a href="game.html">Pizza Games</a></li>
+            <li><a href="contact.htm">Contact & Feedback</a></li>
+            <li><a href="sitemap.htm">SiteMap</a></li>
+        </ul>
+    </div>
+<div class="margins">
+    <h1>Food to Eat</h1>
+    <h6>Hey! How are you?Maybe you meant to come onto here or maybe you just happened to stumble across this page. Regardless of the reason you're here, welcome! I hope you're doing well and have a few slices of pizza next to you. If not, then please gobuysomepizza because the content on this site may cause you to crave a nice warm slice of your favorite pizza.</h6>
+</div>
+<div id="redblock">
+    <h1>Warning:</h1>
+    <h7 id="msg">Disclaimer</h7>
+</div>
+<div class="margins">
+    <h3>Pizza Reviews</h3>
+    <h4>Here you'll find some personal and unprofessional reviews on various different pizzas.</h4>
+    <img src="images/pizza10.JPG" alt="pizza" title="pizza">
+    <h4>Charcoal Guido's Rustic Italian Kitchen | Waltham, MA</h4>
+    <p>After first walking into the Boston Pizza Festival, I quickly discovered that Nutella Pizza was an option that I couldn't pass up. This nutella and ricotta cheese filled calzone type pizza that is topped perfectly with powdered sugar and strawberries is absolutely delectable. As you can see in the picture, it's quite messy, but so worth it. It'll have you licking your fingers and wanting more. </p>
+    <img src="images/pizza4.JPG" alt="pizza" title="pizza">
+    <h4>Posto Mobile | Boston,MA</h4>
+    <p>Across from South Station, there are usually food trucks. Posto is a mobile food truck that makes wood-fired pizza and is part of the Associazione Verace Pizza Napoletana. I decided to try their chicken bbq pizza. The pizza had just the right amount of Parmesan and mozzarella and was cooked well. The sweet bbq sauce and onions helped add that extra touch and reminded me of Nashville. It paired really nicely with sparkling water.</p>
+    <img src="images/pizza9.JPG" alt="pizza" title="pizza">
+    <h4>Five Points Pizza | Nashville, TN</h4>
+    <p>
+    Five Points Pizza in East Nashville is usually my go to pizza spot. I normally never eat garlic knots but this place has amazing garlic knots that will chaneg your life.</p> 
+    </p>
+    <img src="images/pizza11.JPG" alt="pizza" title="pizza">
+    <h4>Pieology | Franklin, TN</h4>
+    <p>While I was back home, my friend suggested we go to try Pieology. In case you aren't familiar with Pie Five or Pieology, they're basically the pizza equivalent to Subway. You get to pick your crust, sauce, and toppings. Then, they quickly bake it in their magical oven and BAM your personal pizza is ready to be devoured. Anyways, I got what I usually get at Pie Five (regular crust with every cheese they have and some meat). This place had more cheeses than Pie Five, better customer service, and really tasty pizza. Although Pie Five will always hold a special place in my heart, Pieology is now my favorite place to get personalized pizzas. I really wish they had more locations in Tennessee though.   
+    </p>
+</div>
+<div id="grayblock">
+    Reviews for these pizzas and more are coming soon. 
+    <p>
+        <img src="images/pizza7.JPG" alt="pizza" title="pizza">
+        <img src="images/pizza12.JPG" alt="pizza" title="pizza">
+        <img src="images/pizza8.JPG" alt="pizza" title="pizza">
+    </p>
+</div>
 </body>
 </html>

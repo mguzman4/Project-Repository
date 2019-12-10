@@ -2,47 +2,199 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Travel">
+    <meta name="keywords" content="homepage, food, stress, travel, places, thoughts, hockey, nhl, contact, feedback, random, bored, el salvador, mexico, canada, south america, north america, central america, americas, argentina, panama, tourism, uruguay">
+    <meta name="author" content="Marisol Guzman">
     <title>Places to Travel</title>
     <style>
-            ul{
-                list-style-type: none;
-                position:relative;
-                margin:0;
-                padding:0;
-                overflow:hidden;
-                background-color:cornsilk;
-            }
-            li{
-                float:left;
-                display: block;
-                color:crimson;
-                font-family: Georgia, 'Times New Roman', Times, serif;
-                text-align: center;
-                padding: 5px 5px;
-                font-weight: bold;
-            }
-            a{
-                text-decoration: none;
-                color:darkolivegreen;
-            }
+        /* img{
+            height: 560px;
+        } */
+    #orange{
+        background-color: #e58d3f;
+        padding-top: 2%;
+    }
+    #small{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .bold{
+        font-weight: bold;
+        text-align: center;
+    }
+    #white{
+        background-color:white;
+        padding-bottom: 5%;
+    }
+    ul{
+        list-style-type: none;
+    }
         </style>
+ <link rel="stylesheet" href="css/nav.css" type=text/css >
+ 
+ <script type="text/javascript">
+        const salvador = [
+            "images/s1.jpg","images/s2.jpg","images/s3.jpg","images/s4.jpg","images/s5.jpg","images/s6.jpg","images/s7.jpg","images/s8.jpg",
+            ]; let i=0;
+
+            function elSalvador() {
+                let willChange = document.getElementById
+                ("elSalvador");
+                if (i ==salvador.length){
+                    i = 0;
+                }
+                willChange.src = salvador [i];
+                i = i ;
+         
+                willChange.src = salvador[i];
+                i = i + 1;
+                words.innerHTML.
+                setTimeout("elSalvador()", 3500);
+            }
+            const uruguay = [
+            "images/u1.jpg","images/u2.jpg","images/u3.jpg","images/u4.jpg","images/u5.jpg","images/u6.jpg",
+        
+            ]; let u=0;
+
+            function elUruguay() {
+                let willChange = document.getElementById
+                ("elUruguay");
+                if (u ==uruguay.length){
+                    u = 0;
+                }
+                willChange.src = uruguay [u];
+                u = u ;
+         
+                willChange.src = uruguay [u];
+                u = u + 1;
+                setTimeout("elUruguay()", 3500);
+            }
+            const argentina = [
+            "images/a1.jpg","images/a2.jpg","images/a3.jpg","images/a4.jpg","images/a5.jpg",
+        
+            ]; let a=0;
+
+            function laArgentina() {
+                let willChange = document.getElementById
+                ("laArgentina");
+                if (a ==argentina.length){
+                    a = 0;
+                }
+                willChange.src = argentina [a];
+                a = a ;
+         
+                willChange.src = argentina[a];
+                a = a + 1;
+                setTimeout("laArgentina()", 3500);
+            }
+            const canada = [
+            "images/c1.jpg","images/c2.jpg","images/c3.jpg","images/c4.jpg","images/c5.jpg","images/c6.jpg","images/c7.jpg","images/c8.jpg","images/c9.jpg",
+        
+            ]; let c=0;
+
+            function elCanada() {
+                let willChange = document.getElementById
+                ("elCanada");
+                if (c ==canada.length){
+                    c = 0;
+                }
+                willChange.src = canada [c];
+                c = c ;
+         
+                willChange.src = canada [c];
+                c = c + 1;
+                setTimeout("elCanada()", 3500);
+            }
+            const panama = [
+            "images/p2.jpg","images/p3.jpg","images/p4.jpg","images/p5.jpg",
+            ]; let p=0;
+
+            function elPanama() {
+                let willChange = document.getElementById
+                ("elPanama");
+                if (p == panama.length){
+                    p = 0;
+                }
+                willChange.src = panama [p];
+                p = p ;
+         
+                willChange.src = panama [p];
+                p = p + 1;
+                setTimeout("elPanama()", 3500);
+            }
+            const mexico = [
+            "images/m1.jpg","images/m2.jpg",
+            ]; let m=0;
+
+            function elMexico() {
+                let willChange = document.getElementById
+                ("elMexico");
+                if (p == mexico.length){
+                    p = 0;
+                }
+                willChange.src = mexico [p];
+                p = p ;
+         
+                willChange.src = mexico [p];
+                p = p + 1;
+                setTimeout("elMexico()", 3500);
+            }
+</script>
 </head>
 <body>
-        <div>
-                <ul>
-                    <li>GOBUYSOMEPIZZA</li>
-                    <li><a href="index.htm">Mi Casa Es Tu Casa</a></li>
-                    <li><a href="food.htm">Food Critiques</a></li>
-                    <li><a href="travel.htm">Places to Travel</a></li>
-                    <li><a href="hockey.htm">Hockey Thoughts</a></li>
-                    <li><a href="activities.htm">Lazy Activities</a></li>
-                    <li><a href="contact.htm">Contact & Feedback</a></li>
-                    <li><a href="sitemap.htm">SiteMap</a></li>
-                </ul>
-            </div>
-<h1>Travel Pictures & small blogs coming your way very soon!</h1>
+    <div class="nav">
+    <ul class="navresponds">
+        <li>GBSP</li>
+        <li><a href="index.htm">Mi Casa Es Tu Casa</a></li>
+        <li><a href="food.htm">Food to Eat</a></li>
+        <li><a href="travel.htm">Places to Travel</a></li>
+        <li><a href="hockey.htm">Hockey Thoughts</a></li>
+        <li><a href="activities.htm">Lazy Activities</a></li>
+        <li><a href="game.html">Pizza Games</a></li>
+        <li><a href="contact.htm">Contact & Feedback</a></li>
+        <li><a href="sitemap.htm">SiteMap</a></li>
+    </ul>
+    </div>
+    <div class="margins">
+<h1>Travel</h1>
+<p>
+<img height=700px src= "images/s1.JPG" alt="Travel Images" title="Travel"/>
+<h2>View more travel images by clicking on the images.</h2>
+</p>
+<table align="center">
+    <tr>
+        <th>
+            <h2>El Salvador</h2>
+            <img height=300px onclick="elSalvador()"src="images/s2.jpg" class="card-img-top" alt="El Salvador" id="elSalvador">
+        </th>
+        <th>
+            <h2>Uruguay</h2>
+            <img height=300px onclick="elUruguay()"src="images/u1.jpg" class="card-img-top" alt="Uruguay" id="elUruguay">
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <h2>Argentina</h2>
+            <img height=300px onclick="laArgentina()"src="images/a1.jpg" class="card-img-top" alt="argentina" id="laArgentina">
+        </th>
+        <th>
+            <h2>Canada</h2>
+            <img height=300px onclick="elCanada()"src="images/c4.jpg" class="card-img-top" alt="canada" id="elCanada">
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <h2>Panama</h2>
+            <img height=300px onclick="elPanama()"src="images/p2.jpg" class="card-img-top" alt="panama" id="elPanama">
+        </th>
+        <th>
+            <h2>Mexico</h2>
+            <img height=300px onclick="elMexico()"src="images/m1.jpg" class="card-img-top" alt="mexico" id="elMexico">
+        </th>
+    </tr>
+</table>   
 <h4>Next Trip:</h4>
 <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3059537.3905250467!2d-74.77175027373322!3d41.50796985901863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x89e3652d0d3d311b%3A0x787cbf240162e8a0!2sBoston%2C%20MA!3m2!1d42.3600825!2d-71.0588801!4m5!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!3m2!1d40.7127753!2d-74.0059728!5e0!3m2!1sen!2sus!4v1571154481983!5m2!1sen!2sus" 
 width="600" 
@@ -51,5 +203,40 @@ frameborder="0"
 style="border:0;" 
 allowfullscreen="">
 </iframe>
+    </div>
+<div id="orange">
+<h1>Pizza Stickers</h1>
+<p>Here’s some simple math:</p>
+<p class="bold">Pizza + Stickers = Pizza Stickers = Happy People</p>
+<p>Pizza makes people happy. Stickers make people smile.</p>  
+<p id="small">I love collecting stickers. One day I stumbled across these cute small orange stickers that say “Keep Calm and Eat Pizza” with a mini pizza on top. Ever since then, I often give them to my friends or put them on postcards that I send across the world.My goal is to spread these stickers all over the world in hopes to spread a love for pizza and smiles all around!</p>
+<p>Below you can see where these small pizza stickers have traveled to:</p>
+</div>
+<div class="margins">
+<img src="images/pizzasticker1.JPG" alt="sticker" height=300px>
+<img src="images/pizzasticker2.JPG" alt="sticker" height=300px>
+</div>
+<div id="white">
+<p>Here's a list of some of the places this stickers have ended up in:</p>
+​<span class="bold">In the US:</span>
+<ul>
+    <li>Tennessee</li>
+    <li>Massachusetts</li>
+    <li>Minnesota</li>
+    <li>Pennsylvania</li>
+</ul>      
+<span class="bold">Other countries: </span>
+<ul>
+    <li>Belarus</li>
+    <li>China</li>
+    <li>Czech  Republic</li>
+    <li>Finland</li>
+    <li>Germany</li>
+    <li>Latvia</li>
+    <li>Lithuania</li>
+    <li>Netherlands </li>
+    <li>Russia</li>
+</ul>
+</div>
 </body>
 </html>
